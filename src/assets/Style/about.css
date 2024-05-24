@@ -1,0 +1,15 @@
+/* styles.css */
+
+.toggleBtn .icon::before {
+  content: '^'; /* Par défaut, affiche une flèche vers le haut */
+  display: inline-block;
+  transform: rotate(180deg); /* Par défaut, pas de rotation */
+  transition: transform 0.3s; /* Ajoute une transition pour une animation fluide */
+  font-size:24px ;
+  margin-left: -35px;
+}
+
+
+.toggleBtn.rotate .icon::before {
+  transform: rotate(0deg); /* Lorsque le bouton est actif et que la classe .rotate est appliquée, effectue une rotation de 45 degrés */
+}

@@ -1,0 +1,740 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  max-width: 100%;
+  margin: auto;
+  font-family: 'Work Sans';
+  font-size: 14px;
+}
+
+section {
+  margin: 50px 0
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+}
+
+nav li {
+  padding: 0 10px;
+  font-size: 1.2em;
+}
+
+a:link,
+a:visited {
+  color: #111;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 25px;
+}
+
+a:active {
+  text-decoration: underline;
+  text-decoration-color: black;
+
+}
+
+img[src='./Size=Desktop.jpg'] {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  /* Pour conserver les proportions de l'image */
+}
+
+#location {
+  border-radius: 25px;
+  background: #F6F6F6;
+  width: 100%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Affiche les éléments en colonnes de 3 sur 3 */
+  gap: 20px;
+  /* Ajoute un espacement entre les éléments */
+}
+
+#location .square {
+  color: white;
+}
+
+.logement-container {
+  position: relative;
+}
+
+.logement-container img {
+  width: 100%;
+  /* Largeur de l'image */
+  height: 200px;
+  /* Hauteur de l'image */
+}
+
+.logement-container p {
+  position: absolute;
+  padding: 5px;
+  /* Ajoute un peu de marge autour du titre */
+  border-radius: 5px;
+  /* Ajoute un peu de bord arrondi au conteneur de titre */
+  bottom: 0%;
+}
+
+.sections-wrapper {
+  display: flex;
+  /* Utiliser Flexbox pour aligner les sections horizontalement */
+}
+
+.section {
+  flex: 1;
+  /* Les sections vont occuper une part égale de l'espace disponible */
+}
+
+.Description {
+  margin-right: 10px;
+  /* Ajouter une marge à droite pour séparer les sections */
+}
+
+.left-content1 {
+  flex: 1;
+}
+
+.stars-container {
+  margin-left: auto;
+  /* Push stars-container to the right */
+}
+
+/* Additional styling for host-info-container and other elements if needed */
+
+
+.left-content1 {
+  flex: 1;
+}
+
+/* Additional styling for host-info-container if needed */
+.rating-host-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.left-content1 {
+  display: flex;
+  align-items: center;
+  /* Aligner verticalement */
+}
+
+
+.stars-container {
+  display: flex;
+  align-items: center;
+  /* Aligner verticalement */
+  margin-left: 20px;
+  /* Ajouter de l'espace entre les étoiles et les tags */
+}
+
+.toggleBtn {
+  background-color: #FF6060;
+  /* Fond rouge */
+  color: white;
+  /* Texte blanc */
+  width: 100%;
+  /* Occupe toute la largeur de son conteneur */
+  padding: 10px;
+  /* Espacement intérieur */
+  border: none;
+  /* Supprime la bordure */
+  cursor: pointer;
+  /* Curseur de type pointer */
+  display: flex;
+  font-size: 24px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.Fiabilité,
+.Respect,
+.Service,
+.Sécurité,
+.Equipements {
+  background: #F6F6F6;
+  /* Fond de la section */
+}
+
+.equipments-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  /* Ajoutez un peu de marge à gauche pour l'alignement */
+}
+
+
+.left-content1 {
+  flex-grow: 1;
+  display: flex;
+}
+
+.tags-container {
+  display: inline;
+}
+
+.stars-container {
+  display: flex;
+  align-items: center;
+  font-size: 29px;
+  order: 2;
+}
+
+.stars {
+  margin: 0;
+  justify-content: flex-start;
+  /* Aligner les étoiles à gauche */
+}
+
+
+
+#Fiabilitétext {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.section p {
+  margin: 0;
+  text-align: left;
+  padding: 10px;
+  padding-bottom: 30px;
+  font-size: 17px;
+  background: #F6F6F673;
+
+}
+
+
+.show-description {
+  display: block !important;
+  /* Afficher le paragraphe si la classe show-description est présente */
+}
+
+img[src='./Size=Desktop.jpg'] {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  /* Pour conserver les proportions de l'image */
+}
+
+.carousel-image {
+  width: 100%;
+  height: 415px;
+}
+
+.basdepage {
+  width: 100%;
+  height: auto;
+  /* Ajoutez d'autres styles CSS si nécessaire */
+}
+
+.apartment-carousel {
+  position: relative;
+  height: 415px;
+}
+
+.apartment-carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 96px;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 0;
+  border-radius: 4px;
+
+}
+.apartment-carousel {
+  position: relative;
+  /* Assurez-vous que le conteneur a une position relative */
+}
+
+.carousel-image {
+  display: block;
+  margin: 0 auto;
+  /* Pour centrer l'image horizontalement */
+}
+
+.apartment-carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 94%;
+  color: white;
+}
+
+.apartment-carousel button:first-child {
+  left: 0px;
+}
+
+.apartment-carousel button:last-child {
+  right: 0px;
+}
+
+.fas.fa-star {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  /* Peut varier selon la version de Font Awesome */
+  font-size: 24px;
+  /* Taille des étoiles */
+}
+
+.rating-host-container h2 i.fas.fa-star {
+  color: #FF6060;
+  /* Couleur des étoiles */
+  font-size: 24px;
+  /* Taille des étoiles */
+}
+.apartment-carousel {
+  position: relative;
+  /* Assurez-vous que le conteneur a une position relative */
+}
+
+.image-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  text-align: center;
+  color: white;
+}
+
+.rating-tag-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.host-info-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  order: 1;
+  margin-top: -75px;
+}
+
+.host-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  /* Ajustez la marge selon vos besoins */
+}
+
+.host-details h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FF6060;
+  margin: 0;
+  /* Supprime les marges par défaut */
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.tag-container {
+  display: flex;
+}
+
+.tag-item {
+  background-color: #FF6060;
+  padding: 10px;
+  /* Ajoute un peu d'espacement interne */
+  margin-right: 10px;
+  /* Espacement entre les éléments */
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.tag-item:last-child {
+  margin-right: 0;
+  /* Supprimer la marge à droite du dernier élément */
+}
+
+.Error {
+  text-align: center;
+}
+
+.ErrorTitle {
+  font-family: Montserrat;
+  font-size: 288px;
+  font-weight: 700;
+  line-height: 411px;
+  text-align: center;
+  color: #FF6060;
+
+}
+
+.ErrorMessage {
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  color: #FF6060;
+  padding-bottom: 20px;
+}
+
+.HomeLink {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: none;
+  /* Supprime le soulignement par défaut */
+  border-bottom: 1px solid black;
+  /* Ajoute un trait en dessous */
+}
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+
+@media (max-width: 321px) {
+  #logo {
+    width: 145px;
+  }
+
+  a:link,
+  a:visited {
+
+    font-size: 15px;
+  }
+
+  .toggleBtn span {
+    margin-left: 85%;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  #location ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .icon {
+    position: absolute;
+    right: 27px;
+  }
+
+  .apartment-carousel button {
+    font-size: 50px;
+    left: 89%;
+  }
+
+  #loca {
+    height: 255px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }
+  
+  .carousel-image {
+    width: 98%;
+    height: 415px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 2px;
+  }
+
+  .logo-img {
+    width: 150px;
+    /* Changer la largeur selon vos besoins */
+    height: auto;
+    /* Pour maintenir le rapport hauteur-largeur */
+  }
+
+  .toggleBtn {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  .stars-container {
+    display: flex;
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: 0px;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  .tag-item {
+    background-color: #FF6060;
+    padding: 10px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: 7px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .sections-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    display: inline-block;
+    /* Afficher en ligne */
+    list-style: none;
+    /* Supprimer les puces */
+    padding: 0;
+    /* Supprimer les marges internes */
+  }
+
+  .Fiabilité,
+  .Respect,
+  .Service,
+  .Sécurité,
+  .Equipements {
+    background: #F6F6F6;
+    margin: 10px 0;
+    width: 93%;
+  }
+
+  section {
+    margin: 10px 0;
+  }
+
+  .nav-menu li {
+    display: inline-block;
+    /* Afficher les éléments de la liste en ligne */
+
+  }
+
+  img[src='./Size=Desktop.jpg'] {
+    width: 100%;
+    height: 209px;
+
+  }
+
+  .nav-menu li:last-child {
+    margin-right: 0;
+    /* Supprimer la marge à droite pour le dernier élément */
+  }
+
+  .section p {
+    margin: 0;
+    text-align: left;
+    padding: 10px;
+    padding-bottom: 30px;
+    font-size: 17px;
+    background: #F6F6F673;
+    width: 87%;
+  }
+
+  .tag-container {
+    display: flex;
+  }
+
+  .host-info-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+  }
+
+  .rating-host-container {
+    flex-direction: row-reverse;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .host-details h1 {
+    margin: 0;
+    /* Pour supprimer les marges par défaut des h1 */
+    font-size: 12px;
+  }
+  .logement-container img {
+    width: 290px;
+    height: 200px;
+}
+}
